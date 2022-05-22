@@ -1,7 +1,7 @@
 #pragma once
 #include "Module.h"
 
-class Window;
+class AppWindow;
 
 class WindowModule :
 	public Module
@@ -12,13 +12,13 @@ public:
 
 	bool Init();
 	bool PreUpdate(float deltaTime);
-	bool CleanUp();
+	bool Finish();
 
-	Window* GetMainWindow() const { return mainWindow; }
-
-private:
-	Window* CreateNewWindow(const char* title, int x, int y, int widht, int height);
+	AppWindow* GetMainWindow() const { return mainWindow; }
 
 private:
-	Window* mainWindow;
+	AppWindow* CreateNewWindow(const char* title, int x, int y, int width, int height);
+
+private:
+	AppWindow* mainWindow;
 };

@@ -18,7 +18,7 @@ int CALLBACK WinMain
 	if (App->Init()) {
 		if (App->Start()) {
 			while (App->DoUpdate()) {}
-			App->CleanUp();
+			App->Finish();
 		}
 	}
 

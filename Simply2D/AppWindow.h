@@ -6,8 +6,9 @@ class AppWindow
 {
 public:
 
-	AppWindow(const char* name, int x, int y, int width, int height);
-	~AppWindow();
+	AppWindow(const char* name, int x, int y, int width, int height) :
+		windowTitle(name), windowX(x), windowY(y), windowWidth(width), windowHeight(height) {}
+	~AppWindow() {}
 
 	virtual void SetTitle(const char* tittle) = 0;
 	virtual void UpdateWindowEvents() = 0;

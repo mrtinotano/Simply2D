@@ -4,10 +4,20 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
     switch (msg)
     {
+    case WM_ACTIVATEAPP:
+         //(bool)wParam;  Window is active/inactive
+        break;
+    case WM_CLOSE:
+        DestroyWindow(hwnd);
+        break;
+    case WM_DESTROY:
+        PostQuitMessage(0);
+        break;
     default:
         break;
     }
-    return 0;
+
+    return DefWindowProc(hwnd, msg, wParam, lParam);
 }
 
 WindowsOSWindow::WindowsOSWindow(const char* name, int x, int y, int width, int height) : AppWindow(name, x, y, width, height)
@@ -21,7 +31,7 @@ WindowsOSWindow::WindowsOSWindow(const char* name, int x, int y, int width, int 
 
 bool WindowsOSWindow::RegisterWindowClass()
 {
-    WNDCLASSEX wc;
+    WNDCLASSEX wc = {};
 
     wc.cbSize = sizeof(WNDCLASSEX);
     wc.style = 0;

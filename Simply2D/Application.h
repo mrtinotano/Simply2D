@@ -11,7 +11,7 @@ public:
 	bool Init();
 	bool Start();
 	bool DoUpdate();
-	bool CleanUp();
+	bool Finish();
 
 private:
 	bool PreUpdate();

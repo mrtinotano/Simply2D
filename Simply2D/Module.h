@@ -37,7 +37,7 @@ public:
 		return true;
 	}
 
-	virtual bool CleanUp()
+	virtual bool Finish()
 	{
 		return true;
 	}
