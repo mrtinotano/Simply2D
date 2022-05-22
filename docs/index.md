@@ -1,6 +1,6 @@
 ## Simply 2D
 
-Seguimiento de desarrollo del motor Simply 2D. Un motor para crear videojuegos 2D para todo el mundo.
+Seguimiento de desarrollo del motor Simply 2D. Un motor para crear videojuegos 2D sin necesidad de usar código.
 
 # Application
 
@@ -13,6 +13,11 @@ Application life loop:
   -Update
   -PostUpdate
 Finish
+
+## Debug
+
+## Event System
+
 
 # Modules
 
