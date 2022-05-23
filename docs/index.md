@@ -14,7 +14,19 @@ Application life loop:
   -PostUpdate
 Finish
 
+## Add dependencies
+- glm
+- vulkan
+- vulkan memmory allocation
+- dear imgui
+- stb:
+  -Leak Check
+
 ## Debug
+
+-Assert
+-Log
+-Memory
 
 ## Event System
 
