@@ -16,7 +16,7 @@ Finish
 
 ## Add dependencies
 - glm
-- vulkan
+- vulkan (vulkan headers)
 - vulkan memmory allocation
 - dear imgui
 - stb:
@@ -46,4 +46,13 @@ to fix const char* to lpcwstr error go to Advanced and set Character Set to Use 
 
 ## Render Module
 
-White screen, now render to see anything. Vulkan
+White screen, now render to see anything.
+
+### Vulkan 
+
+vulkan headers repository
+-Debug Extension
+-Create Instance
+-Create device
+-Create windows surface
+-
