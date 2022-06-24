@@ -55,4 +55,5 @@ vulkan headers repository
 -Create Instance
 -Create device
 -Create windows surface
--
+-Create Command Pool
+-CreateSwapchain
