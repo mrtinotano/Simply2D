@@ -18,6 +18,7 @@ Finish
 - glm
 - vulkan (vulkan headers)
 - vulkan memmory allocation
+- glsl
 - dear imgui
 - stb:
   -Leak Check
@@ -57,3 +58,5 @@ vulkan headers repository
 -Create windows surface
 -Create Command Pool
 -CreateSwapchain
+-RenderPass
+-Shaders
